@@ -11,8 +11,6 @@ alias ping='ping -c 5'
 alias ..='cd ..'
 alias myip='curl http://ipecho.net/plain; echo'
 
-alias reload-zshrc='source ~/.zshrc'
-
 # Security
 alias rm='rm -i'
 alias mv='mv -i'

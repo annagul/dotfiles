@@ -113,3 +113,4 @@ export LANG=en_US.UTF-8
 #
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
+alias zshreload="source ~/.zshrc" 

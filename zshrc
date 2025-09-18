@@ -48,7 +48,7 @@ ZSH_THEME="avit"
 # You can also set it to another string to have that shown instead of the default red dots.
 # e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 # Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -81,6 +81,8 @@ plugins=(
 )
 
 ## Add zsh autosuggestions and highlighting
+
+# Load ZSH Autosuggestions and Syntax Hihglight on macOS
 if [ -f /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
 	source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
@@ -89,6 +91,7 @@ if [ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; 
 	source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
 
+# The same, but on Linux
 if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
 	source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi

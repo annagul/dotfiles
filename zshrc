@@ -120,6 +120,13 @@ bindkey '^OA' up-line-or-search
 bindkey '^[[B' down-line-or-search
 bindkey '^OB' down-line-or-search
 
+# --- SSH Keychain ---
+# Esto arranca el agente solo si no está corriendo y reutiliza la sesión
+#if [[ -x `which keychain` ]]; then
+    # Cambia 'id_ed25519' por 'id_rsa' si tu llave es antigua
+#    eval $(keychain --eval --agents ssh id_ed25519 --quiet)
+#fi
+
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'

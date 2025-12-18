@@ -112,6 +112,14 @@ source $HOME/.aliases
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
+# Histoy with arrow keys ---
+# Up arrow key: Backward history
+bindkey '^[[A' up-line-or-search
+bindkey '^OA' up-line-or-search
+# Down arrow key: Forward history
+bindkey '^[[B' down-line-or-search
+bindkey '^OB' down-line-or-search
+
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'

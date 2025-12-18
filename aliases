@@ -57,3 +57,6 @@ fi
 alias gentoo-up='VBoxManage startvm "Gentoo" --type headless'
 alias gentoo-down='VBoxManage controlvm "Gentoo" acpipowerbutton'
 alias gentoo-ssh='ssh luis@192.168.0.52'  # Pon aquí la IP que anotaste
+
+## Shutdown MacOS but halt VMs first
+alias bye="~/bin/safe-shutdown.sh"
